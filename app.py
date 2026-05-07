@@ -19,13 +19,13 @@ from tensorboard import summary
 # --- 0. CRITICAL CONFIGURATION ---
 # IMPORTANT: When running locally, Streamlit handles secrets. 
 # For this environment, we use an empty string as the key is injected at runtime.
-GEMINI_API_KEY = "AIzaSyA18RxDxo9AV7I6zKK3EoXum99MxK73Awk" # The environment will inject the real key
+GEMINI_API_KEY = "" # The environment will inject the real key
 MODEL_NAME = "gemini-2.5-flash"
 # The full endpoint URL required for the API call
 GEMINI_API_URL = f"https://generativelanguage.googleapis.com/v1beta/models/{MODEL_NAME}:generateContent"
 
 
-YOUTUBE_API_KEY = "AIzaSyDUd2_H2dNQGdyGBnxQUR12nj1dgV2w6yo" 
+YOUTUBE_API_KEY = "" 
 # EMAIL CONFIGURATION (Must be a system email dedicated to this app)
 # 
 # 🛑🛑🛑 ACTION REQUIRED: REPLACE THESE PLACEHOLDERS 🛑🛑🛑
@@ -34,7 +34,7 @@ SMTP_SERVER = "smtp.gmail.com"
 
 SMTP_PORT = 465 
 SENDER_EMAIL = "kiruthi0104@gmail.com" # <--- 🛑 REPLACE WITH YOUR ACTUAL GMAIL 🛑
-SENDER_PASSWORD = "srnj aduw orgu lnhk" # <--- 🛑 REPLACE WITH YOUR GMAIL APP PASSWORD 🛑
+SENDER_PASSWORD = "" # <--- 🛑 REPLACE WITH YOUR GMAIL APP PASSWORD 🛑
 
 # --- 1. MySQL Connector Library Import ---
 try:
@@ -48,8 +48,8 @@ except ImportError:
 DB_CONFIG = {
     "host": "127.0.0.1", 
     "user": "root",     
-    "password": "Kiruthika0104!", # <-- UPDATE THIS PASSWORD
-    "database": "ai_assistant_db" 
+    "password": "", # <-- UPDATE THIS PASSWORD
+    "database": "" 
 }
 
 # Global State Initialization
